@@ -205,6 +205,7 @@ p {
 .header-contacts {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 .header__box {
@@ -214,7 +215,8 @@ p {
 }
 
 .header-contacts__item-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 15px 25px;
   font-family: 'Roboto';
   text-decoration: none;
@@ -254,13 +256,18 @@ p {
 
 .hero.section {
   /* background-color: var(--footerbackground-color); */
-  margin-bottom: 94px;
   padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero\ photo\ 1.jpg);
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero\ photo\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  max-height: 600px;
 }
 
 
@@ -324,6 +331,11 @@ p {
   |  Our benefits section
   |============================
 */
+
+
+.our__benefits {
+  padding-top: 94px;
+}
 
 .features {}
 
@@ -490,6 +502,18 @@ p {
 }
 
 .socials__list-link:hover {
+  background-color: var(--logo-color);
+  transition: all 0.3s ease;
+}
+
+.socials__list-link:focus,
+.socials__link-link:hover {
+  background-color: var(--logo-color);
+  transition: all 0.3s ease;
+}
+
+.socials__list-link:focus .socials__item-icon {
+  fill: var(--headerbackground-color);
   background-color: var(--logo-color);
   transition: all 0.3s ease;
 }
@@ -845,8 +869,11 @@ p {
   position: relative;
   border: 1px solid var(--portfoliobg-color);
   width: 370px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
+}
+
+.gallery-list__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-list__hiddenxtext {
@@ -856,7 +883,7 @@ p {
   height: 294px;
 }
 
-.gallery-list__hiddensubtext {
+/* .gallery-list__hiddensubtext {
   position: absolute;
   top: 0;
   left: 0;
@@ -867,7 +894,7 @@ p {
   transition: transform 250ms ease;
 
   opacity: 0;
-}
+} */
 
 .gallery-list__item:hover .gallery-list__hiddensubtext {
   transform: translatex(0);
