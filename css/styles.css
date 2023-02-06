@@ -286,6 +286,7 @@ p {
   letter-spacing: 0.06em;
   color: var(--headerbackground-color);
   background-color: var(--primary-btncolor);
+  transition: all 0.3s ease;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -299,7 +300,7 @@ p {
   background-color: var(--logo-color);
   cursor: pointer;
   outline: 1px solid var(--headerbackground-color);
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   /* border-color: 1px solid var(--headerbackground-color); */
 }
 
@@ -449,10 +450,12 @@ p {
 .socials__list-link:hover .socials__item-icon {
   fill: var(--headerbackground-color);
   background-color: var(--logo-color);
+  transition: all 0.3s ease;
 }
 
 .socials__list-link:hover {
   background-color: var(--logo-color);
+  transition: all 0.3s ease;
 }
 
 .userpic {
@@ -556,12 +559,14 @@ p {
 .clients__list-link:hover,
 .clients__list-link:focus {
   border-color: var(--logo-color);
+  transition: all 0.3s ease;
 }
 
 
 .clients__list-link:hover .clients__item-icon,
 .clients__list-link:focus .clients__item-icon {
   fill: var(--logo-color);
+  transition: all 0.3s ease;
 }
 
 /**
@@ -691,11 +696,13 @@ p {
 
 .footer__socials-icon {
   fill: var(--headerbackground-color);
+  transition: all 0.3s ease;
 }
 
 .footer__socials-link:hover,
 .footer__socials-link:focus {
   background-color: var(--logo-color);
+  transition: all 0.3s ease;
 }
 
 
@@ -751,7 +758,7 @@ p {
   margin: auto;
   display: block;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   color: var(--primarytext-color);
   background-color: var(--thethirdbgcolor);
   border-radius: 4px;
