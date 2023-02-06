@@ -316,7 +316,7 @@ p {
 }
 
 
-.hero-box__primary-btn:hover,
+
 .hero-box__primary-btn:focus {
   color: var(--headerbackground-color);
   background-color: var(--logo-color);
