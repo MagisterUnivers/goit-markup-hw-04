@@ -830,23 +830,51 @@ p {
   list-style: none;
   /* margin-top: 34px; */
   gap: 30px;
+
 }
 
 /* Hiding borders in IMG */
 
 .gallery-list__item-img {
   min-width: 370px;
-  position: relative;
   left: -1px;
   top: -1px;
 }
 
 .gallery-list__item {
+  position: relative;
   border: 1px solid var(--portfoliobg-color);
   width: 370px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
+
+.gallery-list__hiddenxtext {
+  position: relative;
+  overflow: hidden;
+  width: 370px;
+  height: 294px;
+}
+
+.gallery-list__hiddensubtext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+
+  opacity: 0;
+}
+
+.gallery-list__item:hover .gallery-list__hiddensubtext {
+  transform: translatex(0);
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+}
+
 
 /* .gallery-list__item:not(:last-child) {} */
 
