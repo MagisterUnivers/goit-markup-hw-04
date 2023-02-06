@@ -217,6 +217,20 @@ p {
   color: var(--logo-color);
 }
 
+
+.phone-icon,
+.email-icon {
+  margin-right: 10px;
+  fill: var(--secondarytext-color);
+}
+
+.header-contacts__item-link:hover .phone-icon,
+.header-contacts__item-link:focus .phone-icon,
+.header-contacts__item-link:hover .email-icon,
+.header-contacts__item-link:focus .email-icon {
+  fill: var(--logo-color);
+}
+
 /**
    |============================
    |  Hero Section
@@ -683,6 +697,7 @@ p {
 .footer__socials-link:focus {
   background-color: var(--logo-color);
 }
+
 
 
 /**
