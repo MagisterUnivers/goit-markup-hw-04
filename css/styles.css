@@ -405,7 +405,8 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   position: absolute;
-  top: 225px;
+  /* top: 225px; */
+  bottom: 0px;
   justify-content: center;
   align-items: center;
   color: var(--headerbackground-color);
