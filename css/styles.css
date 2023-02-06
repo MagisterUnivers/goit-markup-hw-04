@@ -644,7 +644,7 @@ p {
 
 .fotlower-box {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .footer-box__sidebar {
@@ -723,8 +723,6 @@ p {
 
 .footer__socials {
   margin-left: 70px;
-  width: 206px;
-  height: 80px;
 }
 
 .footer__socials-list {
