@@ -644,7 +644,7 @@ p {
 
 .fotlower-box {
   display: flex;
-  /* align-items: center; */
+  align-items: baseline;
 }
 
 .footer-box__sidebar {
